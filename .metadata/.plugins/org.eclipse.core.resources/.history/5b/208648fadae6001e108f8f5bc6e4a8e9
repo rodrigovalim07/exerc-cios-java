@@ -1,0 +1,10 @@
+package enums;
+
+public enum statusPedido {
+
+	PAGAMENTO_PENDENTE,
+	PROCESSAMENTO,
+	ENVIADO,
+	ENTREGUE;
+	
+}

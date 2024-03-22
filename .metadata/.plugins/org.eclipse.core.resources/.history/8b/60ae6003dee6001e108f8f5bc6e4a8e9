@@ -1,0 +1,15 @@
+package entidades;
+
+public class ItemDoPedido {
+
+	private Integer quantidade;
+	private Double preco;
+	
+	
+	public ItemDoPedido(Integer quantidade, Double preco) {
+		this.quantidade = quantidade;
+		this.preco = preco;
+	}
+	
+	
+}

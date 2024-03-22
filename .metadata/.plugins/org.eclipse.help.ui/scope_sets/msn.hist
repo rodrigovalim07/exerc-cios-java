@@ -1,0 +1,6 @@
+#Thu Feb 22 13:21:22 BRT 2024
+__DEFAULT__=false
+expression=msn
+org.eclipse.help.ui.localSearch.master=true
+org.eclipse.sdk.Eclipse.master=true
+org.eclipse.sdk.Google.master=true

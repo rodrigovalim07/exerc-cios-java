@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="java.lang.StringIndexOutOfBoundsException"/>
+    <fullyQualifiedTypeName name="java.util.Locale"/>
+    <fullyQualifiedTypeName name="java.util.Scanner"/>
+    <fullyQualifiedTypeName name="java.lang.Math"/>
+    <fullyQualifiedTypeName name="utilitatios.ConversordeMoeda"/>
+    <fullyQualifiedTypeName name="utilitarios.Banco"/>
+    <fullyQualifiedTypeName name="entidades.Funcionario"/>
+    <fullyQualifiedTypeName name="entidades.Post"/>
+    <fullyQualifiedTypeName name="entidades.Pedido"/>
+    <fullyQualifiedTypeName name="entidades.ItemDoPedido"/>
+    <fullyQualifiedTypeName name="java.lang.String"/>
+    <fullyQualifiedTypeName name="entidades.Produto"/>
+    <fullyQualifiedTypeName name="java.util.Date"/>
+</qualifiedTypeNameHistroy>

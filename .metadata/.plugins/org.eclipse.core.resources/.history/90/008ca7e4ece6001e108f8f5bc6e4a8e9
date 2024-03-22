@@ -1,0 +1,74 @@
+package entidades;
+
+import java.text.SimpleDateFormat;
+import java.time.Instant;
+import java.util.ArrayList;
+import java.util.List;
+
+import enums.StatusPedido;
+
+public class Pedido {
+	
+	private static final SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy HH:mm:ss");
+
+	private Instant momento;
+	private StatusPedido status;
+	private Cliente cliente;
+	
+	private List<ItemDoPedido> item = new ArrayList<>();
+	
+	public Pedido() {
+	}
+
+	public Pedido(Instant agora, StatusPedido status, Cliente cliente) {
+		momento = agora;
+		this.status = status;
+		this.cliente = cliente;
+	}
+
+	public Instant getMomento() {
+		return momento;
+	}
+
+	public void setMomento(Instant momento) {
+		this.momento = momento;
+	}
+
+	public StatusPedido getStatus() {
+		return status;
+	}
+
+	public void setStatus(StatusPedido status) {
+		this.status = status;
+	}
+	
+	public void addItem(ItemDoPedido itens) {
+		item.add(itens);
+	}
+	
+	public void removeItem(ItemDoPedido itens) {
+		item.remove(itens);
+	}
+	
+	public double total() {
+		double soma = 0;
+		for (ItemDoPedido c : item) {
+			soma += c.subTotal();
+		}
+		return soma;
+	}
+	
+	public String toString() {
+		StringBuilder sb = new StringBuilder();
+		sb.append("INFORMAÇÕES DO PEDIDO" + "\n");
+		sb.append("Momemento do pedido: " + sdf.format(momento) + "\n");
+		sb.append("Status do pedido : " + status + "\n");
+		sb.append("Cliente: " + cliente.getNome() + " " + cliente.getNascimento() + " - " + cliente.getEmail() + "\n");
+		sb.append("ITENS DO PEDIDO:" + "\n");
+		for (ItemDoPedido item : item) {
+			sb.append(item + "\n");
+		}
+		sb.append("Preço total: " + total());
+		return sb.toString();
+	}
+}
