@@ -18,16 +18,17 @@ public class Programa {
 			System.out.print("Titular: ");
 			String nome = teclado.nextLine();
 			System.out.print("Saldo inicial: ");
-			double saldoInicial = teclado.nextDouble();
+			double saldo = teclado.nextDouble();
 			System.out.print("Limite de saque: ");
 			double limiteSaque = teclado.nextDouble();
-			Conta conta1 = new Conta(conta, nome, saldoInicial, limiteSaque);
-			System.out.println();
 			
+			Conta conta1 = new Conta(conta, nome, saldo, limiteSaque);
+			
+			System.out.println();
 			System.out.print("Digite o valor de saque: ");
 			double saque = teclado.nextDouble();
 			conta1.saque(saque);
-			System.out.print("Novo saldo: $" + String.format("%.2f", conta1.getSaldo()));			
+			System.out.printf("Novo saldo: $%.2f", conta1.getSaldo());			
 		}
 		catch (ContaExceção e) {
 			System.out.println(e.getMessage());

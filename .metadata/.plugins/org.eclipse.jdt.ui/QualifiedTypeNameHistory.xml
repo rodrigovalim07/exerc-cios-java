@@ -12,9 +12,21 @@
     <fullyQualifiedTypeName name="java.lang.String"/>
     <fullyQualifiedTypeName name="entidades.ItemDoPedido"/>
     <fullyQualifiedTypeName name="entidades.ProdutoImportado"/>
-    <fullyQualifiedTypeName name="java.util.Date"/>
     <fullyQualifiedTypeName name="entidades.ProdutoUsado"/>
     <fullyQualifiedTypeName name="entidades.Produto"/>
     <fullyQualifiedTypeName name="entidades.PessoaFisica"/>
     <fullyQualifiedTypeName name="entidades.Empresa"/>
+    <fullyQualifiedTypeName name="model.exceções.ContaExceção"/>
+    <fullyQualifiedTypeName name="model.entidades.Conta"/>
+    <fullyQualifiedTypeName name="java.lang.RuntimeException"/>
+    <fullyQualifiedTypeName name="java.io.IOException"/>
+    <fullyQualifiedTypeName name="entidades.Item"/>
+    <fullyQualifiedTypeName name="java.lang.System"/>
+    <fullyQualifiedTypeName name="java.util.ArrayList"/>
+    <fullyQualifiedTypeName name="entidades.Contrato"/>
+    <fullyQualifiedTypeName name="java.util.Date"/>
+    <fullyQualifiedTypeName name="servicos.ServicoPagamentoOnline"/>
+    <fullyQualifiedTypeName name="servicos.ServicoContrato"/>
+    <fullyQualifiedTypeName name="servicos.ServicoPaypal"/>
+    <fullyQualifiedTypeName name="java.time.LocalDate"/>
 </qualifiedTypeNameHistroy>

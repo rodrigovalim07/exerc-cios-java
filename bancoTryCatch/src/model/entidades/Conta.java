@@ -52,12 +52,16 @@ public class Conta {
 	}
 	
 	public void saque(double saque) {
+		validarSaque(saque);
+		saldo -= saque;
+	}
+	
+	public void validarSaque(double saque) {
 		if (saque > limiteSaque) {
-			throw new ContaExceção("Essa quantia excede seu limite de saque");
+			throw new ContaExceção("Operação inválida: A quantia excede seu limite de saque");
 		}
 		else if (saque > saldo) {
-			throw new ContaExceção("Essa quantia excede o saldo da conta");
+			throw new ContaExceção("Operação inválida: A quantia excede o saldo da conta");
 		}
-		saldo -= saque;
 	}
 }
